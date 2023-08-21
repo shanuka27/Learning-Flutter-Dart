@@ -10,16 +10,50 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       title: 'Flutter Demo',
-       home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Flutter Demo Home page'),
-            backgroundColor: const Color.fromARGB(255, 10, 11, 37),
-          ), 
-          body: const Icon(Icons.home_max_sharp, size: 100.0, color: Colors.blue),
-          
-        backgroundColor:const Color.fromARGB(255, 229, 230, 245),
-       ),
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: Colors.black,
+          body: Column(
+
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container (
+                height: 100,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+                Container (
+                height: 100,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+                Container (
+                height: 100,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+                Container (
+                height: 300,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+            ],
+          ),
+        ),
+      )
     );
   }
 }
