@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
                     width: 130,
                     height: 100,
                     decoration:BoxDecoration( 
-                      color: Colors.green,
+                      color: Colors.purple,
                       borderRadius: BorderRadius.circular(10),
                      )
                   ),
@@ -94,9 +94,8 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                  )
               ),
-
             ],
-          )
+          ),
          )
         ),
       );
